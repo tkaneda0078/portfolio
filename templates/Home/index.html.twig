@@ -1,10 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    unko
-</body>
-</html>
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {% include('navbar.html.twig') %}
+
+    <header class="main-header">
+        <div class="main-header-container">
+            <div class="main-header-content text-center">
+                <h1>ぱふゅーむです。</h1>
+                <span>歌手です。がんばります。</span>
+            </div>
+        </div>
+    </header>
+    <!-- End of Main Header -->
+
+    <main class="main-container project-main-container">
+        <section class="service">
+            <div class="service-container">
+                <header>
+                    <h2 class="fast-fade-in-left wow" data-wow-delay=".5s">Service</h2>
+                </header>
+                <div class="service-content-container">
+                    <p>service Content</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- End of Main Container -->
+
+{% endblock %}
