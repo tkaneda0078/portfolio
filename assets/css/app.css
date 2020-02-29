@@ -13,3 +13,23 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+/*---------------------------------
+  main container
+---------------------------------*/
+.main-container .card,
+.main-container .card-header {
+  border: none;
+}
+
+.main-container .card-header {
+  background-color: transparent;
+}
+
+.main-container .card-title {
+
+}
+
+/*-----------------------
+  service content
+-------------------------*/
