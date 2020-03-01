@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% include('navbar.html.twig') %}
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="header-content text-left content">
+                <h1>Contact</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="contact">
+            <div class="contact-container">
+                <div class="contact-content mb-4">
+                    <div class="mb-5">
+                        <p>制作の依頼・ご相談などお気軽にお問い合わせくださいませ。</p>
+                    </div>
+                    <form method="post" action="">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputName">お名前</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="お名前">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="inputTextArea">お問い合わせ内容</label>
+                                <textarea class="form-control" id="inputTextArea" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <input type="submit" class="btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+{% endblock %}
