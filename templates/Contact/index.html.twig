@@ -1,7 +1,8 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    {% include('navbar.html.twig') %}
+
+    {% include('Components/navbar.html.twig') %}
 
     <header class="main-header">
         <div class="header-container">
@@ -43,5 +44,7 @@
             </div>
         </section>
     </main>
+
+    {% include('Components/Footer/sub.html.twig') %}
 
 {% endblock %}

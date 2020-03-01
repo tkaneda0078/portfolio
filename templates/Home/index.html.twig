@@ -2,7 +2,7 @@
 
 {% block body %}
 
-    {% include('navbar.html.twig') %}
+    {% include('Components/navbar.html.twig') %}
 
     <header class="main-header">
         <div class="main-header-container">
@@ -20,5 +20,7 @@
         {% include('Components/blog.html.twig') %}
     </main>
     <!-- End of Main Container -->
+
+    {% include('Components/Footer/main.html.twig') %}
 
 {% endblock %}
