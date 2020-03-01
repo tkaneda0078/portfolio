@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {% include('navbar.html.twig') %}
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="header-content text-left content">
+                <h1>About</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container project-main-container">
+        <div class="profile-content mb-4">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <div class="row">
+                        <div class="col-sm-3 profile-img">
+                            <img src="http://placehold.it/180x180" alt="" class="rounded-circle img-responsive" />
+                        </div>
+                        <div class="col-sm-9 profile-body">
+                            <h3>Developer</h3>
+                            <dl>
+                                <dt>name: </dt>
+                                <dd>あーちゃん</dd>
+                                <dt>skills: </dt>
+                                <dd>php</dd>
+                            </dl>
+                            <p>Hello there! My name is Alan and I'm a Front End Developer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-sm-3 profile-img">
+                            <img src="http://placehold.it/180x180" alt="" class="rounded-circle img-responsive" />
+                        </div>
+                        <div class="col-sm-9 profile-body">
+                            <h3>Designer</h3>
+                            <dl>
+                                <dt>name: </dt>
+                                <dd>のっち</dd>
+                                <dt>skills: </dt>
+                                <dd>seo</dd>
+                            </dl>
+                            <p>Hello there! My name is Alan and I'm a Front End Developer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}
