@@ -9,3 +9,8 @@ about:
 contact:
     path: /contact
     controller: App\Controller\ContactController::indexAction
+
+contact_send:
+    path: /contact_send
+    controller: App\Controller\ContactController::sendAction
+    methods: POST

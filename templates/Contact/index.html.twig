@@ -19,27 +19,24 @@
                     <div class="mb-5">
                         <p>制作の依頼・ご相談などお気軽にお問い合わせくださいませ。</p>
                     </div>
-                    <form method="post" action="">
+                    {{ form_start(form, {'action': path('contact_send'), 'method': 'POST'}) }}
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label for="inputName">お名前</label>
-                                <input type="text" class="form-control" id="inputName" placeholder="お名前">
+                                {{ form_row(form.name) }}
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="inputEmail">Email</label>
-                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                {{ form_row(form.email) }}
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-12">
-                                <label for="inputTextArea">お問い合わせ内容</label>
-                                <textarea class="form-control" id="inputTextArea" rows="5"></textarea>
+                                {{ form_row(form.detail) }}
                             </div>
                         </div>
                         <div class="text-right">
-                            <input type="submit" class="btn btn-primary">
+                            {{ form_row(form.submit) }}
                         </div>
-                    </form>
+                    {{ form_end(form) }}
                 </div>
             </div>
         </section>
